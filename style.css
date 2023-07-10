@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Aeroport, sans-serif;
+    color: #262323;
+    background-color: #b8dace;
+}
+
+:focus {
+    outline-offset: 2px;
+    outline: mediumpurple solid thin;
+}
+
+::selection {
+    background-color: #ccbdde;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+input {
+    width: 20rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 3px dashed mediumpurple;
+    font-size: 1rem;
+    text-align: center;
+}
+
+input:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn-wrapper {
+    display: flex;
+    column-gap: 2rem;
+}
+
+button {
+    margin-top: 2rem;
+    padding: .5rem 2rem;
+    font-family: Aeroport, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color .2s ease-in, border-color .2s ease-in, transform .1s ease-in;
+}
+
+button:hover {
+    border-color: mediumpurple;
+    color: mediumpurple;
+}
+
+button:active {
+    outline: none;
+    transform: translate(2px, 5px);
+}
+
+.btn-submit {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 400;
+    background-color: #ccbdde;
+    position: relative;
+}
+
+.btn-submit::before {
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    top: calc(50% - (1.5rem / 2));
+    left: 5%;
+    background: transparent url("./calc_img.png") no-repeat center center / contain;
+}
+
+.btn-submit:hover {
+    border-color: white;
+    color: white;
+}
+
+.btn-restart {
+    font-weight: 400;
+    background-color: rgba(204, 189, 222, 0.52);
+}
+
+p {
+    font-size: 2rem;
+    color: mediumpurple;
+    text-shadow: -3px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
