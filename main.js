@@ -46,7 +46,7 @@
     }
 
     function printResult(result) {
-       resultElement.textContent = result;
+       resultElement.textContent = result.toLocaleString();
     }
 
    submitBtn.onclick = function() {
